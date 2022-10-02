@@ -45,5 +45,35 @@ public class Operators {
         boolean moneyInBank = !false;
         System.out.println(moneyInBank);
 
+        System.out.println("-----------------------------------------------------------");
+
+        // equality and relational operators
+        int value1 = 10;
+        int value2 = 5;
+        int value3 = 10;
+        int value4 = 5;
+
+        System.out.println(value1 == value3); // true
+        System.out.println(value1 > value2); // true
+        System.out.println(value2 > value1); // false
+        System.out.println(value1 >= value3); // true
+        System.out.println(value2 <= value3); // true
+        System.out.println(value1 != value3); // false
+        System.out.println(value1 != value2); // true
+
+        // conditional operator
+        // && ||
+        System.out.println((value1 == value3) && (value1 == value2)); // false
+        System.out.println((value1 == value3) || (value1 == value2)); // true
+
+        // example
+        int age = 19;
+        String sex = "male";
+        System.out.println((age > 18) && (age < 25) && (sex == "female"));
+        System.out.println((age > 18) || (sex == "male"));
+
+        // ternary operator
+        System.out.println((age > 18) ? "eligible to vote" : "not eligible");
+
     }
 }
