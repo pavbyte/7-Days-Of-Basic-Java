@@ -1,17 +1,40 @@
-package Intro;
+import java.util.Arrays;
 
 public class DataTypes {
     public static void main(String[] args) {
-        /*
-         * primitive and non - primitive
-         */
+        int num = 4;
+        long amountInBank = 1023743202;
+        boolean test = true; // true or false
+        float try1 = 2.5f;
+        double try2 = 20.5;
+        char try3 = 'r';
 
-        // primitive byte,short,int,long,float,double,boolean,char
-        // non-primitive class,string,array
+        String name = "anuj";
 
-        byte first = 9; // will store 8 bits of data
-        short second = 2344;
+        String[] address;
+        address = new String[5];
 
-        System.out.println(first);
+        // String[] address = new String[5];
+
+        address[0] = "haryana";
+        address[1] = "maharashtra";
+        address[2] = "west bengal";
+
+        System.out.println(address[0]);
+        System.out.println(address[1]);
+        System.out.println(address[2]);
+        System.out.println(address[3]);
+        System.out.println(address[4]);
+
+        int[] number = new int[5];
+        number[0] = 23566;
+        number[2] = 23456;
+
+        System.out.println(Arrays.toString(number));
+
+        String[] friends = { "anuj", "udit", "dua", "daksh", "dhruv", "nischal", "mohit" };
+        System.out.println(friends[4]);
+        // System.out.println(Arrays.toString(friends));
+
     }
 }
